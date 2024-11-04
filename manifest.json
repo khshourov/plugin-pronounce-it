@@ -1,0 +1,40 @@
+{
+    "manifest_version": 2,
+    "name": "Pronounce it!",
+    "version": "0.0",
+
+    "description": "",
+    "homepage_url": "https://github.com/khshourov/plugin-pronounce-it",
+    "author": "Kamrul H Shourov",
+
+    "icons": {
+        "48": "icons/icon-48.png",
+        "96": "icons/icon-96.png"
+    },
+
+    "permissions": [
+        "http://*/*",
+        "https://*/*",
+        "storage",
+        "tabs",
+        "webNavigation"
+    ],
+
+    "browser_action": {
+        "default_area": "navbar",
+        "default_icon": {
+            "16": "icons/popup/icon-16.png",
+            "32": "icons/popup/icon-32.png",
+            "64": "icons/popup/icon-64.png"
+        },
+        "default_popup": "popup/index.html",
+        "default_title": "Pronounce it!"
+    },
+
+    "background": {
+        "scripts": ["background.js"],
+        "type": "module"
+    },
+
+    "web_accessible_resources": []
+}
