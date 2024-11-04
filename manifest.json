@@ -17,7 +17,8 @@
         "https://*/*",
         "storage",
         "tabs",
-        "webNavigation"
+        "webNavigation",
+        "menus"
     ],
 
     "browser_action": {

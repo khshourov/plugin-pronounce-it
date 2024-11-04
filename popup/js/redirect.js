@@ -1,4 +1,4 @@
-import { REDIRECT_BASE_URL } from '../../lib/contants.js';
+import { REDIRECT_BASE_URL } from '../../lib/constants.js';
 
 (async () => {
     const storage = await browser.storage.local.get('authToken');
