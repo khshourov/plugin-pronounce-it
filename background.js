@@ -2,8 +2,8 @@ import { REDIRECT_BASE_URL } from './lib/constants.js';
 
 async function openSearchResultWindow(searchWord) {
     const url = browser.runtime.getURL('popup/result-view.html');
-    const width = 450;
-    const height = 450;
+    const width = 540;
+    const height = 400;
 
     const left = Math.round((screen.width / 2) - (width / 2));
     const top = Math.round((screen.height / 2) - (height / 2));
@@ -15,7 +15,7 @@ async function openSearchResultWindow(searchWord) {
             width: width,
             height: height,
             top: top,
-            left: left
+            left: left,
         });
 
         const focusChangeListener = async (windowId) => {
