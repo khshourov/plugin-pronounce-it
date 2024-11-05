@@ -37,5 +37,9 @@
         "type": "module"
     },
 
-    "web_accessible_resources": []
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "plugin-pronounce-it.shourov.kamrul@gmail.com"
+        }
+    }
 }
