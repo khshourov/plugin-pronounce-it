@@ -1,9 +1,9 @@
 {
     "manifest_version": 2,
     "name": "Pronounce it!",
-    "version": "0.0",
+    "version": "0.1",
 
-    "description": "",
+    "description": "Find the IPA, pronunciation, and meanings of a word directly within the Firefox browser",
     "homepage_url": "https://github.com/khshourov/plugin-pronounce-it",
     "author": "Kamrul H Shourov",
 
