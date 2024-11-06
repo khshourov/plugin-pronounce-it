@@ -70,9 +70,9 @@ function isTokenExpired(token) {
 document.addEventListener("dblclick", async () => {
     const storage = await browser.storage.local.get('authToken');
     const searchWord = window.getSelection().toString().trim();
-    const searchUrl = `http://localhost:3000/?token=${storage.authToken ?? ''}&searchWord=${searchWord ?? ''}`;
 
-    if (!isTokenExpired(storage.authToken)) {
+    if (!isTokenExpired(storage.authToken) && searchWord.length > 0) {
+        const searchUrl = `http://localhost:3000/?token=${storage.authToken ?? ''}&searchWord=${searchWord ?? ''}`;
         showPopupOverlay(searchUrl);
     }
 });
