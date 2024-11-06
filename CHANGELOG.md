@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.3] - 2024-11-06
+- Fix base-url
+
 ## [0.2] - 2024-11-06
 - Fix double click search on empty word
 
