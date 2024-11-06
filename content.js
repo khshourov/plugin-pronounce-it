@@ -72,7 +72,7 @@ document.addEventListener("dblclick", async () => {
     const searchWord = window.getSelection().toString().trim();
 
     if (!isTokenExpired(storage.authToken) && searchWord.length > 0) {
-        const searchUrl = `http://localhost:3000/?token=${storage.authToken ?? ''}&searchWord=${searchWord ?? ''}`;
+        const searchUrl = `https://dictionary-api-ht6b.onrender.com/?token=${storage.authToken ?? ''}&searchWord=${searchWord ?? ''}`;
         showPopupOverlay(searchUrl);
     }
 });
