@@ -6,19 +6,22 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div id="root" class="container"></div>
+    <button id="permission-button" class="icon-button">
+        <i id="permission-icon" class="fa fa-power-off icon-large"></i>
+        <span id="tooltip-text" class="tooltip-text"></span>
+    </button>
 
     <!-- Bottom navigation bar -->
     <div class="bottom-nav">
-        <a href="#">
-            <i class="fa fa-home active"></i>
+        <a href="index.html">
+            <i class="fa fa-home"></i>
             <span>Home</span>
         </a>
-        <a href="settings.html">
-            <i class="fa fa-gear"></i>
+        <a href="#">
+            <i class="fa fa-gear active"></i>
             <span>Settings</span>
         </a>
     </div>
-    <script type="module" src="js/redirect.js"></script>
+    <script type="module" src="js/settings.js"></script>
 </body>
 </html>

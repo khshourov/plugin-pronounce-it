@@ -35,3 +35,99 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+/* Bottom navigation styling */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+/* Navigation link styling */
+.bottom-nav a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0;
+}
+
+/* Icons styling */
+.bottom-nav a i {
+    font-size: 24px;
+}
+
+/* Text label styling */
+.bottom-nav a span {
+    font-size: 12px;
+}
+
+.active {
+    color: #03b6fc;
+}
+
+/* Icon button styling */
+.icon-button {
+    margin-top: -60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 70%;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    background-color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.icon-button:hover {
+    background-color: white;
+}
+
+.icon-large {
+    font-size: 10em;
+}
+
+.icon-enabled {
+    color: green;
+}
+
+.icon-disabled {
+    color: red;
+}
+
+/* Tooltip text styling */
+.icon-button .tooltip-text {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+
+    /* Positioning */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Show tooltip text on hover */
+.icon-button:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}

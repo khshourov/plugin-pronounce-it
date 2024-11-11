@@ -68,10 +68,14 @@ function isTokenExpired(token) {
 }
 
 document.addEventListener("dblclick", async () => {
-    const storage = await browser.storage.local.get('authToken');
+    const storage = await browser.storage.local.get(null);
     const searchWord = window.getSelection().toString().trim();
 
-    if (!isTokenExpired(storage.authToken) && searchWord.length > 0) {
+    const excludedDomains = storage.excludedDomains ? JSON.parse(storage.excludedDomains) : [];
+    const domain = (new URL(window.location.href)).origin;
+    const isDomainExcluded = excludedDomains.includes(domain);
+
+    if (!isTokenExpired(storage.authToken) && !isDomainExcluded && searchWord.length > 0) {
         const searchUrl = `https://dictionary-api-ht6b.onrender.com/?token=${storage.authToken ?? ''}&searchWord=${searchWord ?? ''}`;
         showPopupOverlay(searchUrl);
     }
