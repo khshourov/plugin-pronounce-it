@@ -67,7 +67,13 @@ Visit [releases](https://github.com/khshourov/plugin-pronounce-it/releases) and 
 
 ![Show the search result](docs/images/8.png)
 
+7. You can also disable the double-click action for the current page.
 
+![Domain is currently enable](docs/images/9.png)
+
+![Action text](docs/images/10.png)
+
+![Domain is disabled](docs/images/11.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
