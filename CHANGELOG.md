@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.4] - 2024-11-11
+- Add settings page to disable/enable double-click action on a page
+
 ## [0.3] - 2024-11-06
 - Fix base-url
 
